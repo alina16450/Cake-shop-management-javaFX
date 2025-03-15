@@ -3,6 +3,7 @@ package Domain;
 import java.io.Serializable;
 
 public class Date implements Serializable {
+    //a personalized date class to be used to handle our dates in the Orders class.
     protected int day = 0;
     protected int month = 0;
 
