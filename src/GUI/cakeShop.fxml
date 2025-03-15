@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="list" layoutX="18.0" layoutY="47.0" prefHeight="147.0" prefWidth="564.0" />
+      <ToggleButton fx:id="Cakes" layoutX="18.0" layoutY="14.0" mnemonicParsing="false" onAction="#displayAll" prefHeight="25.0" prefWidth="76.0" text="Cakes">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggles" />
+         </toggleGroup></ToggleButton>
+      <ToggleButton fx:id="Orders" layoutX="94.0" layoutY="14.0" mnemonicParsing="false" onAction="#displayAll" prefHeight="25.0" prefWidth="76.0" text="Orders" toggleGroup="$toggles" />
+      <ComboBox fx:id="combos" layoutX="19.0" layoutY="200.0" prefWidth="150.0" />
+      <TextField fx:id="cakeId" layoutX="20.0" layoutY="273.0" prefHeight="25.0" prefWidth="149.0" visible="false" />
+      <TextField fx:id="type" layoutX="19.0" layoutY="309.0" prefHeight="25.0" prefWidth="149.0" visible="false" />
+      <TextField fx:id="price" layoutX="19.0" layoutY="347.0" prefHeight="25.0" prefWidth="149.0" visible="false" />
+      <Button fx:id="submit" layoutX="179.0" layoutY="200.0" mnemonicParsing="false" text="Submit"  />
+      <TextField fx:id="orderId" layoutX="19.0" layoutY="239.0" visible="false"/>
+      <TextField fx:id="name" layoutX="19.0" layoutY="309.0" visible="false"/>
+      <Label fx:id="messages" layoutX="196.0" layoutY="18.0" prefHeight="17.0" prefWidth="208.0" visible="false"/>
+      <ComboBox fx:id="filters" layoutX="280.0" layoutY="200.0" prefWidth="150.0" promptText="Filters" />
+      <TextField fx:id="filter1" layoutX="281.0" layoutY="239.0" visible="false"/>
+      <TextField fx:id="filter2" layoutX="281.0" layoutY="273.0" visible="false"/>
+      <Button fx:id="submit1" layoutX="439.0" layoutY="200.0" mnemonicParsing="false" text="Filter" />
+      <DatePicker fx:id="receivedDate" layoutX="179.0" layoutY="347.0" prefHeight="25.0" prefWidth="149.0" visible="false"/>
+      <DatePicker fx:id="dueDate" layoutX="19.0" layoutY="347.0" prefHeight="25.0" prefWidth="150.0" visible="false"/>
+   </children>
+</AnchorPane>
