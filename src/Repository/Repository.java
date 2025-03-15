@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public class Repository<ID, T extends Identifiable<ID>> implements IRepository<ID, T> {
+    //The class that handles implementing our CRUD operations for the console. It uses a hashmap that has as Id our Identifiable class from Domain, and a generic type T that will be replaced by either our Cake or Orders class.
     protected HashMap<ID, T> map = new HashMap<>();
 
     @Override
