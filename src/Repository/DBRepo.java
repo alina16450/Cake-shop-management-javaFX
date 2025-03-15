@@ -5,6 +5,7 @@ import Domain.Identifiable;
 import java.sql.SQLException;
 
 public abstract class DBRepo<ID, T extends Identifiable<ID>> extends Repository<ID, T> {
+    //The abstract class that has generic setup of the database implementation.
     public String URL;
     public String tableName;
 
