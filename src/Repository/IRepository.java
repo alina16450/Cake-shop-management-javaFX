@@ -6,6 +6,7 @@ import Domain.Orders;
 import java.util.Iterator;
 
 public interface IRepository<ID, T extends Identifiable<ID>> {
+    //The interface that shows the basic setup of our CRUD operations.
 
     public void add(ID id, T elem) throws IllegalArgumentException;
 
