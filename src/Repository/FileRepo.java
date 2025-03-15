@@ -3,6 +3,7 @@ package Repository;
 import Domain.Identifiable;
 
 public abstract class FileRepo<ID, T extends Identifiable<ID>> extends Repository<ID, T> {
+    //The generic abstract class that handles setup for the Text file and Binary file setup.
     protected String filename;
 
     public FileRepo(String filename) {
